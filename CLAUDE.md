@@ -10,10 +10,10 @@
 > instructions were sitting exactly where their audience could not see them.
 > Delete this block when instantiation is done.)*
 
-- **Project**: ⟦PROJECT-NAME⟧
-- **Human**: ⟦HUMANS⟧
-- **AI**: ⟦AI-SEATS⟧ <!-- with the crew layer, the roster lives in docs/inbox/agent-sessions.json; name the coordinator seat here -->
-- **Last Updated**: ⟦LAST-UPDATED⟧
+- **Project**: Computer Science Wordle
+- **Human**: yuliazhu16
+- **AI**: To be named during recruitment
+- **Last Updated**: 2026-11-12
 
 ---
 
@@ -98,15 +98,15 @@ Tests should:
 **RUN THIS PROJECT'S VERIFICATION GATE BEFORE EVERY COMMIT**
 
 Before serving any change:
-1. Run the project's verification gate: ⟦VERIFICATION-GATE⟧ <!-- test suite, build, linter, or a combination; e.g. `npm test`, `uv run pytest`, `hugo && bin/check` -->
+1. Run the project's verification gate: just gate <!-- test suite, build, linter, or a combination; e.g. `npm test`, `uv run pytest`, `hugo && bin/check` -->
 2. Fix any failures before committing
 3. Never serve changes with a failing gate
 
-**Why**: ⟦GATE-WHY⟧ <!-- state what this project's gate actually catches — real classes of bug, real numbers if you have them. A directive that names a real gate gets followed; an unfollowable one teaches every seat that directives are decorative, and that lesson generalizes. -->
+**Why**: Checks that the template is configured correctly and validates the project records. Add application tests once the game is implemented. <!-- state what this project's gate actually catches — real classes of bug, real numbers if you have them. A directive that names a real gate gets followed; an unfollowable one teaches every seat that directives are decorative, and that lesson generalizes. -->
 
 **Process**:
 ```bash
-⟦VERIFICATION-GATE⟧            # Must be green before commit
+just gate            # Must be green before commit
 git add <explicit paths>       # never -A: stage by path, commit by pathspec — see CONVENTIONS.md, shared-worktree awareness
 git commit -m "..." -- <paths>
 ```
@@ -256,10 +256,14 @@ If the script was successfully used, append as comments how, and what the outcom
 ## Project Context
 
 ### What we're building:
-⟦PROJECT-GOAL⟧ <!-- 1-3 sentences; same token as ONBOARDING's — one text serves both -->
+Build a browser-based Computer Science Wordle game where players guess five-letter computer science terms within six attempts. The game should provide visual feedback for each guess, have a simple and intuitive interface, and eventually be deployed publicly using GitHub Pages.
+
+The project is also an exercise in human-AI collaboration. We will document important design decisions and their reasoning using Architectural Deliberation Records (ADRs).
 
 ### Current focus:
-⟦CURRENT-FOCUS⟧
+Define the initial game requirements, identify key design decisions, and build the first playable version.
+
+Before implementation, the AI collaborator should discuss meaningful tradeoffs with the human, document them as ADRs, and wait for human decisions where appropriate.
 
 ### Key decisions made:
 *(List ADRs here as they land, e.g. `- Auth approach — see docs/adr/0001-*.md`. Empty at birth is healthy.)*

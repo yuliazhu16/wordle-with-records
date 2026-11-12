@@ -1,6 +1,6 @@
 # Crew Onboarding — read this first if you've been recruited
 
-Welcome to **⟦PROJECT-NAME⟧** — ⟦PROJECT-ONE-LINER⟧ <!-- one line: what this
+Welcome to Computer Science Wordle — A browser-based computer science word guessing game developed collaboratively by Yulia and AI assistants. <!-- one line: what this
 project is and who the human collaborator(s) are -->.
 
 This document captures **80% of what every seat needs to know** so per-recruit
@@ -60,7 +60,7 @@ the tmux hive.
 
 ## 1. What this project is
 
-⟦PROJECT-GOAL⟧ <!-- 1-3 sentences: the goal, the repo's role (product repo?
+Our goal is to build an interactive Computer Science Wordle game where players guess five-letter computer science terms within six attempts. The game will be developed in this repository and deployed using GitHub Pages. We will document key design decisions and their reasoning using ADRs to support transparent human-AI collaboration. <!-- 1-3 sentences: the goal, the repo's role (product repo?
 coordination layer?), where implementation happens; same token as CLAUDE.md's -->
 
 **Read first**, in order:
